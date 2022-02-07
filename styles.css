@@ -1,22 +1,70 @@
-* {
+body {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
+    background: #E5E7E9;
 }
 
-.container {
-    width: 200px;
+.card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 50px;
+    background: #FDFEFE;
+    width: 30%;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.background_image img {
+    width: 100%;
     height: 200px;
-    background: peachpuff;
-    position: relative;
-    top: 10px;
-    left: 10px;
+    object-fit: cover;
+    border-radius: 10px 10px 0% 0%;
 }
 
-.item {
-    width: 50px;
-    height: 50px;
-    background: hotpink;
-    position: absolute;
-    right: 0px;
+.profile_img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+}
+
+.main_section .profile_img_container img {
+    width: 30%;
+    position: relative;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.main_section .name, .description {
+    text-align: center;
+}
+
+.main_section .name {
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: DimGray;
+}
+
+.main_section .description {
+    margin-top: -15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: DimGray;
+}
+
+.contact_section {
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: DimGray;
 }
