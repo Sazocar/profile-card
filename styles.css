@@ -49,7 +49,7 @@ body {
     margin-top: 70px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    color: DimGray;
+    color: Black;
 }
 
 .main_section .description {
@@ -67,4 +67,56 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     color: DimGray;
+}
+
+.contact_section p:hover {
+    cursor: pointer;
+}
+
+.stats_container {
+    margin-top: 10px;
+    height: 75px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid lightgrey;
+}
+
+.stats_container h2 {
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #424949;
+}
+
+.stats_container .followers, .following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 75px;
+}
+
+.stats_container .followers {
+    border-right: 1px solid lightgray;
+}
+
+.button_container button {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background: MediumSeaGreen;
+    border-radius: 0px 0px 4px 4px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button_container button:hover {
+    background: SeaGreen;
+    cursor: pointer;
 }
