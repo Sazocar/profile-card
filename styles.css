@@ -91,60 +91,6 @@ body {
     padding: 0;
 }
 
-
-
-.stats_container {
-    height: 60px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.stats_container h2 {
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    color: DimGray;
-}
-
-.stats_container .followers, .following {
-    background: #EAEDED;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 60px;
-    border-top: 1px solid lightgrey;
-}
-
-.stats_container .followers {
-    border-right: 1px solid lightgray;
-}
-
-.button_container {
-    width: 100%;
-}
-
-.button_container button {
-    display: inline-block;
-    width: 100%;
-    height: 60px;
-    background: #64cf92;
-    color: white;
-    border: none;
-    font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.button_container button:hover {
-    background: #52BE80;
-    cursor: pointer;
-}
-
 @media (max-width: 640px) {
     .card {
         margin: 0;
