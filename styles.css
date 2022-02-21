@@ -6,16 +6,16 @@ body {
 }
 
 .card_container {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 .card {
     margin: 50px;
     background: #FDFEFE;
-    width: 30%;
-    height: 550px;
+    width: 350px;
     border-radius: 15px;
     overflow : hidden;
     position: relative;
@@ -24,7 +24,7 @@ body {
 
 .background_image img {
     width: 100%;
-    height: 200px;
+    height: 165px;
     object-fit: cover;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .main_section .name {
-    margin-top: 70px;
+    margin-top: 52px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: Black;
@@ -59,26 +59,41 @@ body {
     margin-top: -15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 500;
     color: DimGray;
+    padding: 0 12px;
 }
 
 .contact_section {
-    position: relative;
-    top: 10pt;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
+    color: DimGray;
+    padding: 0 12px;
+}
+
+.email {
+    text-decoration: none;
     color: DimGray;
 }
 
-.contact_section p:hover {
-    cursor: pointer;
+.icon {
+    width: 20px;
+    color: dimgray;
 }
 
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+
+
 .stats_container {
-    margin-top: 18px;
     height: 60px;
     box-sizing: border-box;
     display: flex;
@@ -92,7 +107,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     text-align: center;
-    color: #424949;
+    color: DimGray;
 }
 
 .stats_container .followers, .following {
@@ -112,8 +127,6 @@ body {
 
 .button_container {
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
 
 .button_container button {
@@ -130,4 +143,10 @@ body {
 .button_container button:hover {
     background: #52BE80;
     cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .card {
+        margin: 0;
+    }
 }
